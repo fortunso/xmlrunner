@@ -14,7 +14,7 @@ try:
     from unittest2.runner import TextTestResult as _TextTestResult
     from unittest2.result import TestResult
 except ImportError:
-    from unittest import TestResult, _TextTestResult, TextTestRunner
+    from unittest import TestResult, TextTestResult as _TextTestResult, TextTestRunner
 
 try:
     # Removed in Python 3
